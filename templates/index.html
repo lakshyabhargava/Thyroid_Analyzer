@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Thyroid Disease Screening AI&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; padding: 20px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 { color: #2c3e50; text-align: center; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section { margin-bottom: 25px; padding: 15px; background: #f8f9fa; border-radius: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn { background-color: #3498db; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%; font-size: 16px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn:hover { background-color: #2980b9; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#results { display: none; margin-top: 20px; border-top: 2px solid #eee; padding-top: 20px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.result-card { background: #e8f6f3; padding: 15px; border-radius: 5px; margin-bottom: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.risk-high { color: #c0392b; font-weight: bold; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.risk-low { color: #27ae60; font-weight: bold; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;🩺 Thyroid Screening System&lt;/h1&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;form id="screeningForm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;1. Upload Ultrasound Image&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;input type="file" name="image" accept=".jpg,.jpeg,.png" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;2. Symptoms&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{% for category, items in questionnaire.items() %}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h4&gt;{{ category }}&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="checkbox-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>{% for item in items %}</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;input type="checkbox" name="{{ item.id }}"&gt; {{ item.text }}</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>{% endfor %}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{% endfor %}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;3. Hormone Levels (Optional)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div style="display: flex; gap: 10px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="number" step="0.01" name="tsh" placeholder="TSH Level"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="number" step="0.01" name="t3" placeholder="T3 Level"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="number" step="0.01" name="t4" placeholder="T4 Level"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button type="button" class="btn" onclick="submitForm()"&gt;Analyze Patient&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/form&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="results"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Analysis Results&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="loading" style="text-align: center; display: none;"&gt;Processing...&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="output"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>async function submitForm() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const form = document.getElementById('screeningForm');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const formData = new FormData(form);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const resultsDiv = document.getElementById('results');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const outputDiv = document.getElementById('output');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const loadingDiv = document.getElementById('loading');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>resultsDiv.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>loadingDiv.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>outputDiv.innerHTML = '';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const response = await fetch('/predict', {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>method: 'POST',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>body: formData</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const data = await response.json();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (data.error) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>outputDiv.innerHTML = `&lt;p style="color:red"&gt;Error: ${data.error}&lt;/p&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>outputDiv.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="result-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3&gt;Final Condition: ${data.final_condition}&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Risk Level: &lt;span class="${data.risk_level === 'High' ? 'risk-high' : 'risk-low'}"&gt;${data.risk_level}&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Combined Risk Score: ${data.risk_score}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;&lt;strong&gt;Recommendation:&lt;/strong&gt; ${data.recommendation}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h4&gt;Image Analysis&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p&gt;Predicted: ${data.image_prediction}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p&gt;Confidence: ${data.image_confidence}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;img src="data:image/jpeg;base64,${data.image_data}" width="100%" style="border-radius: 5px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h4&gt;Symptom Analysis&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p&gt;Primary: ${data.questionnaire_result}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p&gt;Score: ${data.questionnaire_score}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} catch (error) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>outputDiv.innerHTML = `&lt;p style="color:red"&gt;System Error: ${error}&lt;/p&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} finally {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>loadingDiv.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
