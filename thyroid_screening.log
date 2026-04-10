@@ -1,0 +1,239 @@
+2025-11-20 00:23:05,481 - INFO - Initializing ThyroidScreeningSystem
+2025-11-20 00:23:06,191 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-11-20 00:23:06,194 - INFO - Image model loaded successfully
+2025-11-20 00:23:06,195 - INFO - Questionnaire initialized
+2025-11-20 00:23:06,195 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:23:06,195 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:23:06,199 - INFO - Model pipeline loaded successfully.
+2025-11-20 00:23:06,200 - INFO - Starting patient screening process
+2025-11-20 00:23:06,200 - INFO - Processing image prediction
+2025-11-20 00:23:06,200 - INFO - Making prediction for image: data/normal/1.jpeg
+2025-11-20 00:23:06,200 - INFO - Preprocessing image: data/normal/1.jpeg
+2025-11-20 00:23:06,207 - INFO - Image preprocessing completed successfully
+2025-11-20 00:23:07,359 - INFO - Image prediction completed. Predicted class: hypothyroidism with confidence: 0.35
+2025-11-20 00:23:07,359 - INFO - Processing questionnaire responses
+2025-11-20 00:23:07,360 - INFO - 0.7
+2025-11-20 00:23:07,360 - INFO - Combining predictions
+2025-11-20 00:23:07,360 - INFO - Combining predictions
+2025-11-20 00:23:07,360 - INFO - Using questionnaire-based condition: hypothyroidism
+2025-11-20 00:23:07,360 - INFO - 0.405135862827301
+2025-11-20 00:23:07,360 - INFO - Combined prediction completed. Final condition: hypothyroidism, Risk level: high
+2025-11-20 00:23:07,360 - INFO - Patient screening completed successfully
+2025-11-20 00:38:53,239 - INFO - Initializing ThyroidScreeningSystem
+2025-11-20 00:38:53,933 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-11-20 00:38:53,936 - INFO - Image model loaded successfully
+2025-11-20 00:38:53,936 - INFO - Questionnaire initialized
+2025-11-20 00:38:53,936 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:38:53,936 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:38:53,941 - INFO - Model pipeline loaded successfully.
+2025-11-20 00:38:53,970 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-20 00:38:53,971 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-20 00:38:53,972 - INFO -  * Restarting with stat
+2025-11-20 00:39:00,689 - INFO - Initializing ThyroidScreeningSystem
+2025-11-20 00:39:01,313 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-11-20 00:39:01,316 - INFO - Image model loaded successfully
+2025-11-20 00:39:01,316 - INFO - Questionnaire initialized
+2025-11-20 00:39:01,316 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:39:01,316 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:39:01,320 - INFO - Model pipeline loaded successfully.
+2025-11-20 00:39:01,339 - WARNING -  * Debugger is active!
+2025-11-20 00:39:01,355 - INFO -  * Debugger PIN: 126-733-279
+2025-11-20 00:39:31,291 - INFO - 127.0.0.1 - - [20/Nov/2025 00:39:31] "GET / HTTP/1.1" 200 -
+2025-11-20 00:39:31,693 - INFO - 127.0.0.1 - - [20/Nov/2025 00:39:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-20 00:41:10,804 - INFO - 127.0.0.1 - - [20/Nov/2025 00:41:10] "GET / HTTP/1.1" 200 -
+2025-11-20 00:43:59,498 - INFO - 127.0.0.1 - - [20/Nov/2025 00:43:59] "GET / HTTP/1.1" 200 -
+2025-11-20 00:48:42,902 - INFO - Initializing ThyroidScreeningSystem
+2025-11-20 00:48:43,555 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-11-20 00:48:43,558 - INFO - Image model loaded successfully
+2025-11-20 00:48:43,558 - INFO - Questionnaire initialized
+2025-11-20 00:48:43,558 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:48:43,558 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:48:43,563 - INFO - Model pipeline loaded successfully.
+2025-11-20 00:48:43,592 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-20 00:48:43,592 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-20 00:48:43,593 - INFO -  * Restarting with stat
+2025-11-20 00:48:50,200 - INFO - Initializing ThyroidScreeningSystem
+2025-11-20 00:48:50,820 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-11-20 00:48:50,822 - INFO - Image model loaded successfully
+2025-11-20 00:48:50,822 - INFO - Questionnaire initialized
+2025-11-20 00:48:50,822 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:48:50,822 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:48:50,827 - INFO - Model pipeline loaded successfully.
+2025-11-20 00:48:50,849 - WARNING -  * Debugger is active!
+2025-11-20 00:48:50,867 - INFO -  * Debugger PIN: 126-733-279
+2025-11-20 00:49:04,930 - INFO - 127.0.0.1 - - [20/Nov/2025 00:49:04] "GET / HTTP/1.1" 200 -
+2025-11-20 00:49:35,236 - INFO - 127.0.0.1 - - [20/Nov/2025 00:49:35] "GET / HTTP/1.1" 200 -
+2025-11-20 00:49:36,289 - INFO - 127.0.0.1 - - [20/Nov/2025 00:49:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-20 00:49:54,955 - INFO - 127.0.0.1 - - [20/Nov/2025 00:49:54] "GET / HTTP/1.1" 200 -
+2025-11-20 00:50:01,597 - INFO - 127.0.0.1 - - [20/Nov/2025 00:50:01] "GET / HTTP/1.1" 200 -
+2025-11-20 00:50:03,023 - INFO - 127.0.0.1 - - [20/Nov/2025 00:50:03] "GET / HTTP/1.1" 200 -
+2025-11-20 00:50:03,928 - INFO - 127.0.0.1 - - [20/Nov/2025 00:50:03] "GET / HTTP/1.1" 200 -
+2025-11-20 00:52:12,665 - INFO - 127.0.0.1 - - [20/Nov/2025 00:52:12] "GET / HTTP/1.1" 200 -
+2025-11-20 00:54:02,226 - INFO - Initializing ThyroidScreeningSystem
+2025-11-20 00:54:02,936 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-11-20 00:54:02,939 - INFO - Image model loaded successfully
+2025-11-20 00:54:02,939 - INFO - Questionnaire initialized
+2025-11-20 00:54:02,940 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:54:02,940 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:54:02,944 - INFO - Model pipeline loaded successfully.
+2025-11-20 00:54:02,981 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-20 00:54:02,981 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-20 00:54:02,982 - INFO -  * Restarting with stat
+2025-11-20 00:54:09,602 - INFO - Initializing ThyroidScreeningSystem
+2025-11-20 00:54:10,224 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-11-20 00:54:10,227 - INFO - Image model loaded successfully
+2025-11-20 00:54:10,227 - INFO - Questionnaire initialized
+2025-11-20 00:54:10,227 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:54:10,227 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:54:10,232 - INFO - Model pipeline loaded successfully.
+2025-11-20 00:54:10,255 - WARNING -  * Debugger is active!
+2025-11-20 00:54:10,275 - INFO -  * Debugger PIN: 126-733-279
+2025-11-20 00:54:33,778 - INFO - 127.0.0.1 - - [20/Nov/2025 00:54:33] "GET / HTTP/1.1" 200 -
+2025-11-20 00:54:33,816 - INFO - 127.0.0.1 - - [20/Nov/2025 00:54:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-20 00:56:07,077 - INFO -  * Detected change in '/Users/lakshyabhargava/Desktop/Thyroid-Detection-Project/app.py', reloading
+2025-11-20 00:56:07,802 - INFO -  * Restarting with stat
+2025-11-20 00:56:15,735 - INFO - Initializing ThyroidScreeningSystem
+2025-11-20 00:56:16,401 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-11-20 00:56:16,404 - INFO - Image model loaded successfully
+2025-11-20 00:56:16,404 - INFO - Questionnaire initialized
+2025-11-20 00:56:16,404 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:56:16,404 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:56:16,409 - INFO - Model pipeline loaded successfully.
+2025-11-20 00:56:16,428 - WARNING -  * Debugger is active!
+2025-11-20 00:56:16,445 - INFO -  * Debugger PIN: 126-733-279
+2025-11-20 00:56:47,819 - INFO - Initializing ThyroidScreeningSystem
+2025-11-20 00:56:48,432 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-11-20 00:56:48,435 - INFO - Image model loaded successfully
+2025-11-20 00:56:48,435 - INFO - Questionnaire initialized
+2025-11-20 00:56:48,435 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:56:48,435 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:56:48,440 - INFO - Model pipeline loaded successfully.
+2025-11-20 00:56:48,469 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-20 00:56:48,469 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-20 00:56:48,470 - INFO -  * Restarting with stat
+2025-11-20 00:56:56,034 - INFO - Initializing ThyroidScreeningSystem
+2025-11-20 00:56:56,638 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-11-20 00:56:56,641 - INFO - Image model loaded successfully
+2025-11-20 00:56:56,641 - INFO - Questionnaire initialized
+2025-11-20 00:56:56,641 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:56:56,641 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-20 00:56:56,645 - INFO - Model pipeline loaded successfully.
+2025-11-20 00:56:56,669 - WARNING -  * Debugger is active!
+2025-11-20 00:56:56,686 - INFO -  * Debugger PIN: 126-733-279
+2025-11-20 00:57:12,323 - INFO - 127.0.0.1 - - [20/Nov/2025 00:57:12] "GET / HTTP/1.1" 200 -
+2025-11-20 00:58:34,482 - INFO - 127.0.0.1 - - [20/Nov/2025 00:58:34] "POST /predict HTTP/1.1" 200 -
+2025-11-20 01:00:58,334 - INFO - Starting patient screening process
+2025-11-20 01:00:58,336 - INFO - Processing image prediction
+2025-11-20 01:00:58,336 - INFO - Making prediction for image: /Users/lakshyabhargava/Desktop/Thyroid-Detection-Project/data/temp_upload.jpg
+2025-11-20 01:00:58,336 - INFO - Preprocessing image: /Users/lakshyabhargava/Desktop/Thyroid-Detection-Project/data/temp_upload.jpg
+2025-11-20 01:00:58,557 - INFO - Image preprocessing completed successfully
+2025-11-20 01:00:59,870 - INFO - Image prediction completed. Predicted class: hypothyroidism with confidence: 0.35
+2025-11-20 01:00:59,870 - INFO - Processing questionnaire responses
+2025-11-20 01:00:59,870 - INFO - 0.5499999999999999
+2025-11-20 01:00:59,870 - INFO - Combining predictions
+2025-11-20 01:00:59,870 - INFO - Combining predictions
+2025-11-20 01:00:59,870 - INFO - Using questionnaire-based condition: hypothyroidism
+2025-11-20 01:00:59,870 - INFO - 0.3817650002241134
+2025-11-20 01:00:59,870 - INFO - Combined prediction completed. Final condition: hypothyroidism, Risk level: medium
+2025-11-20 01:00:59,870 - INFO - Patient screening completed successfully
+2025-11-20 01:00:59,875 - INFO - 127.0.0.1 - - [20/Nov/2025 01:00:59] "POST /predict HTTP/1.1" 200 -
+2025-11-22 09:48:20,816 - INFO - Initializing ThyroidScreeningSystem
+2025-11-22 09:48:21,464 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-11-22 09:48:21,467 - INFO - Image model loaded successfully
+2025-11-22 09:48:21,467 - INFO - Questionnaire initialized
+2025-11-22 09:48:21,467 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-22 09:48:21,467 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-22 09:48:21,472 - INFO - Model pipeline loaded successfully.
+2025-11-22 09:48:21,500 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-22 09:48:21,500 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-22 09:48:21,501 - INFO -  * Restarting with stat
+2025-11-22 09:48:27,704 - INFO - Initializing ThyroidScreeningSystem
+2025-11-22 09:48:28,327 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-11-22 09:48:28,330 - INFO - Image model loaded successfully
+2025-11-22 09:48:28,330 - INFO - Questionnaire initialized
+2025-11-22 09:48:28,330 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-22 09:48:28,330 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2025-11-22 09:48:28,335 - INFO - Model pipeline loaded successfully.
+2025-11-22 09:48:28,354 - WARNING -  * Debugger is active!
+2025-11-22 09:48:28,372 - INFO -  * Debugger PIN: 126-733-279
+2025-11-22 09:48:45,802 - INFO - 127.0.0.1 - - [22/Nov/2025 09:48:45] "GET / HTTP/1.1" 200 -
+2025-11-22 10:13:12,072 - INFO - Starting patient screening process
+2025-11-22 10:13:12,073 - INFO - Processing image prediction
+2025-11-22 10:13:12,073 - INFO - Making prediction for image: /Users/lakshyabhargava/Desktop/Thyroid-Detection-Project/data/temp_upload.jpg
+2025-11-22 10:13:12,074 - INFO - Preprocessing image: /Users/lakshyabhargava/Desktop/Thyroid-Detection-Project/data/temp_upload.jpg
+2025-11-22 10:13:12,163 - INFO - Image preprocessing completed successfully
+2025-11-22 10:13:13,445 - INFO - Image prediction completed. Predicted class: hypothyroidism with confidence: 0.38
+2025-11-22 10:13:13,445 - INFO - Processing questionnaire responses
+2025-11-22 10:13:13,445 - INFO - 0.44999999999999996
+2025-11-22 10:13:13,445 - INFO - Combining predictions
+2025-11-22 10:13:13,445 - INFO - Combining predictions
+2025-11-22 10:13:13,445 - INFO - Using questionnaire-based condition: hypothyroidism
+2025-11-22 10:13:13,445 - INFO - 0.39109015494585037
+2025-11-22 10:13:13,445 - INFO - Combined prediction completed. Final condition: hypothyroidism, Risk level: medium
+2025-11-22 10:13:13,445 - INFO - Patient screening completed successfully
+2025-11-22 10:13:13,446 - INFO - 127.0.0.1 - - [22/Nov/2025 10:13:13] "POST /predict HTTP/1.1" 200 -
+2026-03-14 10:08:38,317 - INFO - Initializing ThyroidScreeningSystem
+2026-03-14 10:08:38,949 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-03-14 10:08:38,952 - INFO - Image model loaded successfully
+2026-03-14 10:08:38,952 - INFO - Questionnaire initialized
+2026-03-14 10:08:38,952 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2026-03-14 10:08:38,952 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2026-03-14 10:08:38,958 - INFO - Model pipeline loaded successfully.
+2026-03-14 10:08:38,990 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-14 10:08:38,990 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-14 10:08:38,992 - INFO -  * Restarting with stat
+2026-03-14 10:08:43,995 - INFO - Initializing ThyroidScreeningSystem
+2026-03-14 10:08:44,601 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-03-14 10:08:44,604 - INFO - Image model loaded successfully
+2026-03-14 10:08:44,604 - INFO - Questionnaire initialized
+2026-03-14 10:08:44,604 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2026-03-14 10:08:44,604 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2026-03-14 10:08:44,607 - INFO - Model pipeline loaded successfully.
+2026-03-14 10:08:44,627 - WARNING -  * Debugger is active!
+2026-03-14 10:08:44,643 - INFO -  * Debugger PIN: 687-018-517
+2026-03-14 10:09:25,915 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:25] "GET / HTTP/1.1" 200 -
+2026-03-14 10:09:26,447 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-14 10:09:29,523 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "GET / HTTP/1.1" 200 -
+2026-03-14 10:09:29,533 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2026-03-14 10:09:29,608 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2026-03-14 10:09:29,682 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-14 10:09:29,695 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2026-03-14 10:09:29,701 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2026-03-14 10:09:29,710 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-14 10:09:29,723 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "GET / HTTP/1.1" 200 -
+2026-03-14 10:09:29,730 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2026-03-14 10:09:29,735 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2026-03-14 10:09:29,744 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-14 10:09:29,750 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2026-03-14 10:09:29,756 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2026-03-14 10:09:29,762 - INFO - 127.0.0.1 - - [14/Mar/2026 10:09:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-14 16:37:18,618 - INFO - Initializing ThyroidScreeningSystem
+2026-03-14 16:37:19,309 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-03-14 16:37:19,312 - INFO - Image model loaded successfully
+2026-03-14 16:37:19,312 - INFO - Questionnaire initialized
+2026-03-14 16:37:19,312 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2026-03-14 16:37:19,312 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2026-03-14 16:37:19,318 - INFO - Model pipeline loaded successfully.
+2026-03-14 16:37:19,348 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-14 16:37:19,348 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-14 16:37:19,350 - INFO -  * Restarting with stat
+2026-03-14 16:37:25,118 - INFO - Initializing ThyroidScreeningSystem
+2026-03-14 16:37:25,781 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-03-14 16:37:25,784 - INFO - Image model loaded successfully
+2026-03-14 16:37:25,784 - INFO - Questionnaire initialized
+2026-03-14 16:37:25,784 - INFO - Initializing hormone model from: ./models/best_thyroid_model_pipeline.pkl
+2026-03-14 16:37:25,784 - INFO - Loading model from: ./models/best_thyroid_model_pipeline.pkl
+2026-03-14 16:37:25,789 - INFO - Model pipeline loaded successfully.
+2026-03-14 16:37:25,810 - WARNING -  * Debugger is active!
+2026-03-14 16:37:25,829 - INFO -  * Debugger PIN: 687-018-517
+2026-03-14 16:37:59,757 - INFO - 127.0.0.1 - - [14/Mar/2026 16:37:59] "GET / HTTP/1.1" 200 -
+2026-03-14 16:38:00,215 - INFO - 127.0.0.1 - - [14/Mar/2026 16:38:00] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2026-03-14 16:38:00,354 - INFO - 127.0.0.1 - - [14/Mar/2026 16:38:00] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2026-03-14 16:38:00,434 - INFO - 127.0.0.1 - - [14/Mar/2026 16:38:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
